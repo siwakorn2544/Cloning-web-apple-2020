@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iPad-Apple(TH)</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+       <style>
+            .container{
+                font-family: 'Prompt', sans-serif;
+            }
+            nav a:hover{
+            text-decoration: none;
+            color: #2997ff !important;
+        }
+        </style>
+    </head>
+    <body>
+        <nav class="head-navbar"> 
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="44" viewBox="0 0 16 44"><path d="M8.02 16.23c-.73 0-1.86-.83-3.05-.8-1.57.02-3.01.91-3.82 2.32-1.63 2.83-.42 7.01 1.17 9.31.78 1.12 1.7 2.38 2.92 2.34 1.17-.05 1.61-.76 3.03-.76 1.41 0 1.81.76 3.05.73 1.26-.02 2.06-1.14 2.83-2.27.89-1.3 1.26-2.56 1.28-2.63-.03-.01-2.45-.94-2.48-3.74-.02-2.34 1.91-3.46 2-3.51-1.1-1.61-2.79-1.79-3.38-1.83-1.54-.12-2.83.84-3.55.84zm2.6-2.36c.65-.78 1.08-1.87.96-2.95-.93.04-2.05.62-2.72 1.4-.6.69-1.12 1.8-.98 2.86 1.03.08 2.09-.53 2.74-1.31" fill="#fff"/></svg>
+                </a>
+                
+                <div class="nav-icon">
+                    <div class="bar one"></div>
+                    <div class="bar two"></div>
+                </div>
+        
+                <div class="nav-links">
+                    <a href="Mac overview.html">Mac</a>
+                    <a href="Ipad overview.html">iPad</a>
+                    <a href="iPhone overview.html">iPhone</a>
+                    <a href="#">Watch</a>
+                    <a href="#">TV</a>
+                    <a href="#">Music</a>
+                    <a href="#">บริการช่วยเหลือ</a>
+                </div>
+        
+                <svg class="search-icon hide-on-phone" viewBox="0 0 3.7041668 11.641667" height="44" width="14">
+                    <g transform="matrix(0.97865947,0,0,0.97865947,-18.209185,-74.390797)">
+                        <path d="m 19.070369,80.532362 c -0.618144,0.618143 -0.619255,1.62581 -7.32e-4,2.244333 0.570867,0.570865 1.473777,0.613735 2.095614,0.131181 l 0.945308,0.945309 0.280633,-0.280633 -0.945308,-0.945309 c 0.482552,-0.621838 0.439684,-1.524746 -0.131182,-2.095613 -0.618523,-0.618523 -1.62619,-0.617413 -2.244333,7.32e-4 z m 0.280632,0.280632 c 0.466517,-0.466515 1.216631,-0.467898 1.683433,-0.0011 0.466802,0.466801 0.466882,1.218378 3.64e-4,1.684894 -0.466512,0.466513 -1.21809,0.466436 -1.684892,-3.67e-4 -0.466803,-0.466801 -0.465418,-1.216918 0.0011,-1.683432 z" fill="white" />
+                    </g>
+                </svg>
+                <svg class="shop-icon" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 17 48" height="44" width="14">
+                    <defs>
+                    <style>
+                        .cls-1 {
+                        fill: none;
+                        }
+                        .cls-2 {
+                        fill: #fff;
+                        }
+                    </style>
+                    </defs>
+                    <g id="bag_small">
+                    <rect id="boundingbox" class="cls-1" width="17" height="48"/>
+                    <path id="bag" class="cls-2" d="M14.5,15.98H12.712a4.227,4.227,0,0,0-8.424,0H2.5A2.5,2.5,0,0,0,0,18.48v11a2.5,2.5,0,0,0,2.5,2.5h12a2.5,2.5,0,0,0,2.5-2.5v-11A2.5,2.5,0,0,0,14.5,15.98Zm-6-2.875a3.243,3.243,0,0,1,3.212,2.875H5.288A3.243,3.243,0,0,1,8.5,13.105ZM16,29.48a1.5,1.5,0,0,1-1.5,1.5H2.5A1.5,1.5,0,0,1,1,29.48v-11a1.5,1.5,0,0,1,1.5-1.5h12a1.5,1.5,0,0,1,1.5,1.5Z"/>
+                    </g>
+                </svg>
+        
+            </div>
+        </nav>
+        <div class="container-fluid" style="background-color: #fbfbfd;">
+            <nav class="nav justify-content-center" style="padding-top: 1%;">
+                <a class="text-center" style="color: black;" href="iPad Pro.html">
+                    <img src="iPad overview/ipadpro_light__b2axwqwl0seq_large.svg" style="width: 35%;">
+                    <br>
+                    <p>iPad Pro</p>
+                </a>
+                <a class="text-center" style="color: black;" href="iPad Air.html">
+                    <img src="iPad overview/ipadair_light__bxa7031ri76u_large.svg" style="width: 35%;">
+                    <br>
+                    <p>iPad Air</p>
+                </a>
+                <a class="text-center" style="color: black;" href="ipad.html">
+                    <img src="iPad overview/ipad_light__jyjgim3zp16q_large.svg" style="width: 35%;">
+                    <br>
+                    <p>iPad</p>
+                </a>
+                <a class="text-center" style="color: black; margin-left: 1%;" href="#">
+                    <img src="iPad overview/ipadmini_light__gkq0aptdyw2m_large.svg" style="width: 31%;">
+                    <br>
+                    <p>iPad mini</p>
+                </a>
+                <a class="text-center" style="color: black; margin-left: 1%;" href="#">
+                    <img src="iPad overview/ipad_comp_light__bvnbwijvjwdy_large.svg" style="width: 35%;">
+                    <br>
+                    <p>เปรียบเทียบ</p>
+                </a>
+                <a class="text-center" style="color: black;" href="#">
+                    <img src="iPad overview/apple_pencil_light__cdqtdanbc16u_large.svg" style="width: 3%;">
+                    <br>
+                    <p>Apple Pencil</p>
+                </a>
+                <a class="text-center" style="color: black;" href="#">
+                    <img src="iPad overview/keyboard_light__gejz7uk8j4ya_large.svg" style="width: 35%;">
+                    <br>
+                    <p>คีย์บอร์ด</p>
+                </a>
+                <a class="text-center" style="color: black;" href="#">
+                    <img src="iPad overview/airpods_light__bnk7vnjy3lyq_large.svg" style="width: 35%;">
+                    <br>
+                    <p>AirPods</p>
+                </a>
+                <a class="text-center" style="color: black;" href="#">
+                    <img src="iPad overview/ipad_acc_light__dyvsp83elz6u_large.svg" style="width: 35%;">
+                    <br>
+                    <p>อุปกรณ์เสริม</p>
+                </a>
+                <a class="text-center" style="color: black;" href="#">
+                    <img src="iPad overview/ipados_light__gdfna9j08tua_large.svg" style="width: 35%;">
+                    <br>
+                    <p>iPad OS</p>
+                </a>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center" style="padding-top: 10%;">
+                    <p style="color: orange;">ใหม่</p>
+                    <h1>iPad Air</h1>
+                    <h3>ทั้งทรงพลัง ทั้งสดใส</h3>
+                    <h3>ทั้งน่ามหัศจรรย์</h3>
+                    <br>
+                    <p>ราคาเริ่มต้นที่ ฿19,900</p>
+                    <p>โปรดตรวจสอบวันวางจําหน่ายอีกครั้ง</p>
+                    <button class="btn btn-primary">ดูราคา</button>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                    <img src="iPad overview/ipad-air-select-202009_FMT_WHH.jfif" width="100%">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12 order-md-0 order-1">
+                    <img src="iPad overview/ipad-2020-hero-landing.jfif" width="70%" style="margin-left: 5%;">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center" style="padding-top: 10%;">
+                    <p style="color: orange;">ใหม่</p>
+                    <h1>iPad</h1>
+                    <h3>ความสามารถเกินคาด</h3>
+                    <h3>ในราคาคาดไม่ถึง</h3>
+                    <br>
+                    <p>ราคาเริ่มต้นที่ ฿10,990</p>
+                    <button class="btn btn-primary">ซื้อ</button>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center" style="padding-top: 10%;">
+                    <h1>iPad Pro</h1>
+                    <h3>ที่สุดของประสบการณ์</h3>
+                    <h3>ของ iPad</h3>
+                    <br>
+                    <p>ราคาเริ่มต้นที่ ฿27,900</p>
+                    <button class="btn btn-primary">ซื้อ</button>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                    <img src="iPad overview/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH.jfif" width="100%">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12 order-md-0 order-1" style="padding-top: 10%;">
+                    <img src="iPad overview/APPLE_IPAD_MINI_5_01.png" width="100%">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center" style="padding-top: 10%;">
+                    <h1>iPad Mini</h1>
+                    <h3>เล็กที่ขนาด</h3>
+                    <h3>ยิ่งใหญ่ที่ความสามารถ</h3>
+                    <br>
+                    <p>เริ่มต้นที่ ฿13,900</p>
+                    <button class="btn btn-primary">ซื้อ</button>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center" style="padding-top: 5%;">
+                    <h1>หา iPad ที่เหมาะสําหรับคุณ</h1>
+                    <a class="btn btn-link" href="#">เปรียบเทียบ iPad รุ่นต่างๆ</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-6 text-center">
+                    <img src="iPad overview/ipad-pro-12-11-select-202003_GEO_TH_LANG_TH_FMT_WHH.jfif" width="100%">
+                    <h4>iPad Pro</h4>
+                    <p>เริ่มต้นที่ ฿27,900</p>
+                    <img src="iPad overview/compare_ipad_pro_swatches__d1feqzz3rtg2_large_2x.jpg" style="width: 20%;">
+                    <hr>
+                    <p>จอภาพ Liquid Retina</p>
+                    <h4>12.9" และ 11"</h4>
+                    <p>พร้อมเทคโนโลยี</p>
+                    <p>Promotion</p>
+                    <img src="iPad overview/compare_a12z_chip__kiucb5v8rs66_large_2x.png" width="20%">
+                    <br>
+                    <br>
+                    <p>ชิพ A12Z Bionic</p>
+                    <br>
+                    <img src="iPad overview/compare_magic_keyboard__ejauphe9o92e_large_2x.png" width="30%">
+                    <br>
+                    <br>
+                    <p>สามารถใช้งานร่วมกับ</p>
+                    <p>Magic Keyboard และ</p>
+                    <p>Smart Keyboard Folio</p>
+                    <br>
+                    <img src="iPad overview/compare_pencil__e667gupwv9iu_large.png">
+                    <p>สามารถใช้งานร่วมกับ</p>
+                    <p>Apple Pencil (รุ่นที่1)</p>
+                    <br>
+                    <hr>
+                    <button class="btn btn-primary">ซื้อ</button>
+                    <br>
+                    <br>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <img src="iPad overview/ipad-air-select-wifi-spacegray-201911_GEO_TH_LANG_TH_FMT_WHH.jfif" width="100%">
+                    <h4>iPad Air</h4>
+                    <p>เริ่มต้นที่ ฿19,900</p>
+                    <img src="iPad overview/compare_ipad_air_swatches__zgoe8pqn9xue_large_2x.jpg" style="width: 55%;">
+                    <hr>
+                    <p>จอภาพ Liquid Retina</p>
+                    <h4>10.9"</h4>
+                    <div style="margin-top: 35%;">
+                        <img src="iPad overview/compare_a12z_chip__kiucb5v8rs66_large_2x.png" width="20%">
+                        <br>
+                        <br>
+                        <p>ชิพ A14</p>
+                        <br>
+                        <img src="iPad overview/compare_magic_keyboard__ejauphe9o92e_large_2x.png" width="30%">
+                        <br>
+                        <br>
+                        <p>สามารถใช้งานร่วมกับ</p>
+                        <p>Magic Keyboard และ</p>
+                        <p>Smart Keyboard Folio</p>
+                        <br>
+                        <img src="iPad overview/compare_pencil__e667gupwv9iu_large.png">
+                        <p>สามารถใช้งานร่วมกับ</p>
+                        <p>Apple Pencil (รุ่นที่1)</p>
+                    </div>
+                    <br>
+                    <hr>
+                    <button class="btn btn-primary">ดูราคา</button>
+                    <br>
+                    <br>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <img src="iPad overview/iPad-10.2-7th-Gen-Photo-2-600x600.jpg" width="100%">
+                    <h4>iPad</h4>
+                    <p>เริ่มต้นที่ ฿10,900</p>
+                    <img src="iPad overview/compare_ipad_10_2_swatches__fripgo3dhgq6_large_2x.jpg" style="width: 30%;">
+                    <hr>
+                    <p>จอภาพ Retina</p>
+                    <h4>10.2"</h4>
+                    <div style="margin-top: 35%;">
+                        <img src="iPad overview/compare_a12_chip__ewldzefq3wae_large_2x.png" width="20%">
+                        <br>
+                        <br>
+                        <p>ชิพ A12 Bionic</p>
+                        <br>
+                        <img src="iPad overview/compare_magic_keyboard__ejauphe9o92e_large_2x.png" width="30%">
+                        <br>
+                        <br>
+                        <p>สามารถใช้งานร่วมกับ</p>
+                        <p>Smart Keyboard</p>
+                        <br>
+                    </div>
+                    <div style="margin-top: 15%;">
+                        <img src="iPad overview/compare_pencil__e667gupwv9iu_large.png">
+                        <p>สามารถใช้งานร่วมกับ</p>
+                        <p>Apple Pencil (รุ่นที่1)</p>
+                    </div>
+                    <br>
+                    <hr>
+                    <button class="btn btn-primary">ซื้อ</button>
+                    <br>
+                    <br>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <img src="iPad overview/ipad-mini-select-201911_GEO_TH_LANG_TH_FMT_WHH.jfif" width="100%">
+                    <h4>iPad Mini</h4>
+                    <p>เริ่มต้นที่ ฿13,900</p>
+                    <img src="iPad overview/compare_ipad_10_2_swatches__fripgo3dhgq6_large_2x.jpg" style="width: 30%;">
+                    <hr>
+                    <p>จอภาพ Retina</p>
+                    <h4>7.9"</h4>
+                    <div style="margin-top: 35%;">
+                        <img src="iPad overview/compare_a12_chip__ewldzefq3wae_large_2x.png" width="20%">
+                        <br>
+                        <br>
+                        <p>ชิพ A12Z Bionic</p>
+                        <br>
+                        <img src="iPad overview/compare_bluetooth_keyboard__ccnt5vblj876_large_2x.png" width="30%">
+                        <br>
+                        <br>
+                        <p>สามารถใช้งานร่วมกับ</p>
+                        <p>คีย์บอร์ด Bluetooth</p>
+                        <br>
+                    </div>
+                    <div style="margin-top: 15%;">
+                        <img src="iPad overview/compare_pencil__e667gupwv9iu_large.png">
+                        <p>สามารถใช้งานร่วมกับ</p>
+                        <p>Apple Pencil (รุ่นที่1)</p>
+                    </div>
+                    <br>
+                    <hr>
+                    <button class="btn btn-primary">ซื้อ</button>
+                    <br>
+                    <br>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1>รับเครดิตมูลค่าสูงสุด ฿8,500</h1>
+                            <h1>สําหรับใช้ซื้อ iPad เครื่องใหม่</h1>
+                            <p>ด้วย Apple Trade In เพียงคุณนำ iPad ที่มีคุณสมบัติเข้าเกณฑ์เข้าเกณฑ์</p>
+                            <p>ก็รับเครดิตสำหรับใช้ซื้อเครื่องใหม่ได้เลย เรียกว่าทั้งดีต่อคุณและดีต่อโลกใบนี้</p>
+                            <br>
+                            <a class="btn btn-link" href="#">ตรวจสอบมูลค่าของอุปกรณ์ที่จะแลก</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+                    <img src="iPad overview/icon_delivery__tz8cove92gy2_large.png">
+                    <h4>จัดส่งฟรี</h4>
+                    <p>รับบริการจัดส่งฟรีถึงบ้านคุณ</p>
+                    <p>ดูวันที่ส่งมอบได้ในขั้นตอน</p>
+                    <p>การชำระเงิน</p>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+                    <img src="iPad overview/icon_large.svg" width="12%">
+                    <h4>บริการด้านการเงิน</h4>
+                    <p>มีบริการผ่อนชำระ 0%</p>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+                    <img src="iPad overview/icon_engraving__too4s7l7o72u_large.png">
+                    <h4>ปรับแต่งในแบบของคุณเอง</h4>
+                    <p>สลักชื่อของคุณหรือข้อความ</p>
+                    <p>ส่วนตัวลงบน iPad ฟรี</p>
+                    <p>ที่ Apple เท่านั้น</p>
+                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12 text-center">
+                    <h1>สิ่งจำเป็นสำหรับ iPad</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Apple Pencil</h3>
+                            <p>ปิ๊งไอเดียปุ๊บ ก็จดลงมาได้ปั๊บ</p>
+                            <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                            <a class="btn btn-link" href="#">ซื้อ ></a>
+                        </div>
+                        <img class="card-img-bottom" src="iPad overview/apple_pencil__dp5hre2lf8ya_medium.jpg" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                    <div class="card" style="height: 100%;width: 100;">
+                        <img class="card-img-top order-sm-1 order-1" src="iPad overview/smart_keyboard_folio__fxq8s0qk1wya_medium.jpg" style="width: 100%;">
+                        <div class="card-body">
+                            <h3>คีย์บอร์ดสำหรับ iPad</h3>
+                            <p>คีย์บอร์ดที่ไม่ว่าจะด้านไหนๆ ก็หายห่วง</p>
+                            <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                            <a class="btn btn-link" href="#">ซื้อ ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center" style="margin-top: 2%;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>อุปกรณ์เสริม</h3>
+                            <p>ดูปก เคส และอีกมากมายที่ช่วยให้คุณ</p>
+                            <p>ใช้ประโยชน์จาก iPad ของคุณ</p>
+                            <p>ได้อย่างเต็มที่</p>
+                            <a class="btn btn-link" href="#">ได้อย่างเต็มที่ ></a>
+                        </div>
+                        <img class="card-img-bottom" src="iPad overview/accessories__d6ltr7n1knyq_medium.jpg" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center" style="margin-top: 2%;">
+                    <div class="card" style="height: 100%; width: 100%;">
+                        <div class="card-body">
+                            <h3>ทำให้เป็นของคุณ</h3>
+                            <p>แต่งเติม AirPods ให้เป็นของคุณ</p>
+                            <p>ด้วยการสลักข้อความฟรี</p>
+                            <p>ที่ Apple เท่านั้น</p>
+                            <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                            <a class="btn btn-link" href="#">ซื้อ ></a>
+                        </div>
+                        <img class="card-img-bottom" src="iPad overview/ipad_airpods_engraving__chc3xbh11lsi_medium.jpg" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12 text-center">
+                    <h1>สิ่งที่ทำให้ iPad เป็น iPad</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div id="box1" class="col-lg-8 col-md-8 col-sm-12 col-12 order-sm-0 order-1 text-center">
+                                <img class="card-img order-sm-1 order-1" src="iPad overview/why_ipad__f4g05nvvbj6m_medium.jpg" style="width: 100%;">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center" style="padding-top: 15%;">
+                                <div class="card-body">
+                                    <h1>ทำไมต้อง iPad</h1>
+                                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center" style="padding-top: 15%;">
+                                <div class="card-body">
+                                    <h1>iPadOS</h1>
+                                    <p>ความเป็นไปได้ใหม่ๆ</p>
+                                    <p>เป็นไปได้บน iPad เท่านั้น</p>
+                                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <img class="card-img" src="iPad overview/ipados__c32v3imah9iu_medium.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div id="box1" class="col-lg-8 col-md-8 col-sm-12 col-12 order-sm-0 order-1 text-center">
+                                <img class="card-img order-sm-1 order-1" src="iPad overview/icloud__e8d5j75mfy6i_small_2x.jpg">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center" style="padding-top: 7%;">
+                                <div class="card-body">
+                                    <h1>iCloud</h1>
+                                    <p>ที่ที่ดีที่สุดสำหรับรูปภาพ ไฟล์</p>
+                                    <p>และอื่นๆ อีกมากมายทั้งหมดของคุณ</p>
+                                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12 text-center">
+                    <h1>ใช้ iPad ของคุณให้เต็มที่ยิ่งขึ้น</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                                <img class="card-img" src="iPad overview/bundle__dcx98bi8r7o2_medium_2x.jpg" style="padding: 15%;">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center" style="padding-top: 5%;">
+                                <div class="para" style="border: 1px solid rgb(240, 240, 240); border-radius: 40px; width: 25%; text-align: center; padding-top: 2%; margin-left: auto; margin-right: auto;">
+                                    <p>พบกันภายในปีนี้</p>
+                                </div>
+                                <img src="iPad overview/apple_one__dfbvii8v7k6e_medium_2x.jpg" style="width: 40%; margin-top: 2%;">
+                                <div style="padding-top: 5%;">
+                                    <h3>รวม 4 บริการของ Apple</h3>
+                                    <h3>เข้าเป็นชุดเดียวกัน และเพลิดเพลิน</h3>
+                                    <h3>ได้มากขึ้นในราคาที่คุ้มค่า</h3>
+                                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="background-color:black">
+                        <div class="card-body text-center">
+                            <img src="iPad overview/apple_tv_plus_logo__easznsb8yr8m_medium_2x.png" style="width: 20%;">
+                            <div style="padding-top: 3%;">
+                                <p style="color: white;">ใช้ Apple TV+ ได้ฟรีนาน 1 ปี </p>
+                                <p style="color: white">เมื่อซื้อ iPad</p>
+                            </div>
+                            <a class="btn btn-link" href="#">ลองใช้ฟรี ></a>
+                            <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                        </div>
+                        <img class="card-img-bottom" src="iPad overview/apple_tv_plus_tile__e6nup2qmvqye_medium_2x.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="background-image: url('iPad overview/apple_arcade_tile__cwmk40f0x682_medium_2x.jpg'); width: 100%; height: 100%; background-repeat: no-repeat; background-position: center;">
+                        <div class="card-body text-center">
+                            <img src="iPad overview/apple_arcade_logo_tile__f51k696nme62_medium_2x.png" style="width: 30%;">
+                            <div style="padding-top: 3%;color: white;">
+                                <p>ได้เวลาสนุกของคอเกม</p>
+                                <p>โลกแห่งเกมนับร้อยๆ แบบไม่มีโฆษณา</p>
+                            </div>
+                            <a style="color: white;" class="btn btn-link" href="#">ลองใช้ฟรี ></a>
+                            <a style="color: white;" class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                                <div class="card-body">
+                                    <img style="margin-top: 25%;" src="iPad overview/apple_music_logo__e6qzv7u5iq2q_medium_2x.png" style="width: 20%;">
+                                    <p style="margin-top: 5%;">70 ล้านเพลง ฟังฟรี 3 เดือน</p>
+                                    <a class="btn btn-link" href="#">ลองใช้ฟรี ></a>
+                                    <a class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center" style="padding-top: 5%;">
+                                <img class="card-img" src="iPad overview/apple_music__b9xqezgi696q_medium_2x.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 64vh; height: 80vh; background-image: url('iPad overview/ipad_for_education__c5dytzu56rqu_medium_2x.jpg'); background-size: contain; background-repeat: no-repeat;">
+                        <div class="card-body text-center" style="color: white;">
+                            <div style="margin-top: 5%;">
+                                <h3>iPad สำหรับการศึกษา</h3>
+                                <a style="color: white;" class="btn btn-link" href="#">ดูเกี่ยวกับ iPad กับการศึกษา ></a>
+                                <br>
+                                <a style="color: white;" href="#">เลือกซื้อในราคาส่งเสริมการศึกษาจาก Apple ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="card" style="width: 64vh; height: 80vh; background-image: url('iPad overview/ipad_for_business__bt0mseawn2s2_medium_2x.jpg'); background-size: contain; background-repeat: no-repeat;">
+                        <div class="card-body text-center">
+                            <div style="margin-top: 5%;">
+                                <h3 style="color: white;">Apple ในที่ทำงาน</h3>
+                                <a style="color: white;" class="btn btn-link" href="#">ดูเพิ่มเติม ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="background-color: rgb(242, 242, 242);text-align:left;padding-top: 50px;">
+        <div class="container" style="font-size: 12.5px;">
+            <div class="row">
+                <div class="col-12">
+                    <ol>
+                        <li>
+                            <p>มูลค่าการแลกอ้างอิงจาก iPad Pro รุ่น 12.9 นิ้ว (รุ่นที่ 3) ความจุ 1TB
+                                มูลค่าการแลกจะแตกต่างกันไปตามสภาพ ปี และการกำหนดค่าของอุปกรณ์ที่คุณนำมาแลก
+                                คุณต้องมีอายุอย่างน้อย 20 ปี จึงจะมีคุณสมบัติเข้าเกณฑ์การแลกรับเครดิตหรือบัตรของขวัญ
+                                Apple Store อุปกรณ์บางเครื่องอาจไม่เข้าเกณฑ์การรับเครดิต สามารถดูรายละเอียดเพิ่มเติมจาก
+                                พันธมิตรด้านการแลกอุปกรณ์ ของ Apple สำหรับการแลก และ พันธมิตรด้านการรีไซเคิล
+                                สำหรับการรีไซเคิลอุปกรณ์ที่มีคุณสมบัติเข้าเกณฑ์ อาจมีการใช้ข้อกำหนดและข้อจำกัด
+                                การจ่ายมูลค่าของการแลกจะเกิดขึ้นเมื่ออุปกรณ์ที่ได้รับนั้นตรงตามคำอธิบายของคุณขณะทำการประเมิน
+                                พันธมิตรบริษัทอื่นที่ได้รับการรับรองจาก Apple
+                                สงวนสิทธิ์ในการปฏิเสธหรือจำกัดจำนวนอุปกรณ์ไม่ว่าจะด้วยเหตุผลใดก็ตาม</p>
+                        </li>
+                        <li>
+                            <p>การทดลองใช้ Apple One
+                                ฟรีนั้นไม่รวมบริการที่คุณใช้อยู่แล้วในปัจจุบันทั้งที่เป็นการทดลองใช้ฟรีหรือการสมัครสมาชิก
+                                หลังหมดช่วงทดลองใช้ แผนบริการจะมีการต่ออายุโดยอัตโนมัติจนกว่าจะยกเลิก
+                                อาจมีการใช้ข้อจำกัดและข้อกำหนดอื่นๆ</p>
+                        </li>
+                        <li>
+                            <p>฿99/เดือน หลังหมดช่วงทดลองใช้ฟรี หนึ่งการสมัครสมาชิกต่อกลุ่มการแชร์กันในครอบครัว
+                                ข้อเสนอมีระยะเวลา 3 เดือนหลังการเปิดใช้งานอุปกรณ์ที่เข้าเกณฑ์
+                                แผนบริการจะมีการต่ออายุโดยอัตโนมัติจนกว่าจะยกเลิก อาจมีข้อจำกัดและ ข้อกำหนด อื่นๆ</p>
+                        </li>
+                        <li>
+                            <p>฿129/เดือน หลังหมดช่วงทดลองใช้ฟรี, ไม่มีข้อผูกมัด, หลังหมดช่วงทดลองใช้
+                                แผนบริการจะมีการต่ออายุโดยอัตโนมัติจนกว่าจะยกเลิก</p>
+                        </li>
+                    </ol>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg col-sm-12">
+                    <p><b>เลือกซื้อและเรียนรู้</b></p>
+                    <p>Mac</p>
+                    <p>iPad</p>
+                    <p>iPhone</p>
+                    <p>Watch</p>
+                    <p>TV</p>
+                    <p>Music</p>
+                    <p>AirPods</p>
+                    <p>iPod touch</p>
+                    <p>อุปกรณ์เสริม</p>
+                    <p>บัตรของขวัญ</p>
+                </div>
+                <div class="col-lg col-sm-12">
+                    <p><b>การบริการ</b></p>
+                    <p>Apple Music</p>
+                    <p>Apple TV+</p>
+                    <p>Apple Arcade</p>
+                    <p>iCloud</p>
+                    <p>Apple One</p>
+                    <p>Apple Books</p>
+                    <p><b>บัญชี</b></p>
+                    <p>จัดการกับ Apple ID ของคุณ</p>
+                    <p>บัญชีสำหรับ Apple Store</p>
+                    <p>iCloud.com</p>
+                </div>
+                <div class="col-lg col-sm-12">
+                    <p><b>Apple Store</b></p>
+                    <p>ค้นหาร้าน</p>
+                    <p>เลือกซื้อออนไลน์</p>
+                    <p>Genius Bar</p>
+                    <p>Today at Apple</p>
+                    <p>แอพ Apple Store</p>
+                    <p>บริการด้านการเงิน</p>
+                    <p>Apple Trade In</p>
+                    <p>โครงการรีไซเคิลของ Apple</p>
+                    <p>สถานะคำสั่งซื้อ</p>
+                    <p>บริการช่วยเหลือด้านการซื้อ</p>
+                </div>
+                <div class="col-lg col-sm-12">
+                    <p><b>สำหรับธุรกิจ</b></p>
+                    <p>Apple กับธุรกิจ</p>
+                    <p>เลือกซื้อสินค้าสำหรับธุรกิจ</p>
+                    <p><b>สำหรับการศึกษา</b></p>
+                    <p>เลือกซื้อสินค้าสำหรับมหาวิทยาลัย</p>
+                    <p>Apple กับการศึกษา</p>
+                    <p><b>สำหรับการดูแลสุขภาพ</b></p>
+                    <p>Apple กับการดูแลสุขภาพ</p>
+                </div>
+                <div class="col-lg col-sm-12">
+                    <p><b>ค่านิยมของ Apple</b></p>
+                    <p>การช่วยการเข้าถึง</p>
+                    <p>สิ่งแวดล้อม</p>
+                    <p>ความเป็นส่วนตัว</p>
+                    <p>ความรับผิดชอบของซัพพลายเออร์</p>
+                    <p><b>เกี่ยวกับ Apple</b></p>
+                    <p>Newsroom</p>
+                    <p>ผู้บริหาร Apple</p>
+                    <p>นักลงทุน</p>
+                    <p>กิจกรรม</p>
+                    <p>ติดต่อ Apple</p>
+                </div>
+            </div><br>
+            <p>อีกหลากหลายวิธีในการเลือกซื้อ: <a href="#">ค้นหา Apple Store</a> หรือ <a href="#">ร้านค้าอื่นๆ</a>
+                ใกล้คุณ หรือโทร. 001-800-65-6957</p>
+            <hr>
+            <div class="row">
+                <div class="col-lg-10 col-sm-12">
+                    <p style="text-align:left;">Copyright © 2020 Apple Inc. สงวนสิทธิ์ทุกประการ</p>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <p>ไทย | Shop in English</p>
+                </div>
+                <div class="col-12">
+                    <p>นโยบายความเป็นส่วนตัว | ข้อกำหนดการใช้งาน | การขายและการคืนเงิน | ข้อมูลทางกฎหมาย |
+                        แผนผังเว็บไซต์</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

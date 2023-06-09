@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+* {
+  font-family: "Prompt", sans-serif;
+}
+
+/* First navbar every page have this navbar*/
+.head-navbar {
+  margin: 0;
+  overflow: hidden;
+  background: #000000cc;
+}
+
+.nav-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  width: 100%;
+}
+
+.nav-content a {
+  display: block;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 44px;
+  text-decoration: none !important;
+  transition: all 0.3s;
+  color: #f5f5f7;
+}
+
+.nav-content a,
+.logo,
+.nav-icon,
+.search-icon,
+.shop-icon {
+  opacity: 0.7;
+}
+.nav-content a:hover,
+.logo:hover,
+.nav-icon:hover,
+.search-icon:hover,
+.shop-icon:hover {
+  opacity: 1;
+  color: #f5f5f7 !important;
+}
+
+.nav-links {
+  z-index: 1001;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-icon {
+  display: none;
+  grid-gap: 5px;
+  grid-template-columns: auto;
+  padding: 17px 0;
+  height: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bar {
+  height: 1px;
+  width: 18px;
+  background: white;
+  transition: 0.5s;
+}
+
+.search-icon {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.shop-icon {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hide-on-phone {
+    display: none;
+  }
+  .nav-links {
+    position: fixed;
+    top: 44px;
+    right: 0;
+    height: 0;
+    width: 100%;
+    background: #1d1d1f;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .show .nav-links {
+    height: 100%;
+  }
+
+  .nav-links a {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: opacity 1.5s, height 2s;
+    text-align: left;
+    border-bottom: gray solid 1px;
+  }
+
+  .show .nav-links a {
+    opacity: 1;
+    width: auto;
+    height: auto;
+  }
+
+  .nav-icon {
+    order: 1;
+    display: grid;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .shop-icon {
+    order: 3;
+  }
+}
+
+.show .one {
+  transform: rotate(45deg) translateY(5.5px);
+}
+
+.show .two {
+  transform: rotate(-45deg) translateY(-5.5px);
+}
+
+.content {
+  max-width: 1024px;
+  min-height: 380px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 64px;
+  margin-bottom: 0;
+  color: #111111;
+}
+
+@media (max-width: 960px) {
+  .content h1 {
+    font-size: 48px;
+  }
+}
+
+/* Products page - second navbar */
+.navbar-produc-black {
+  background-color: rgba(29, 29, 29, 0.85);
+}
+.navbar-produc-white {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.product-brand {
+  font-size: 21px;
+  font-weight: bold;
+}
+.mini-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+.icon-collapse {
+  border: none;
+  outline: none;
+}
+.icon-collapse:focus {
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .product-brand {
+    font-size: 19px;
+  }
+  .mini-text {
+    font-size: 14px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Products services(before footer) */
+.text-ser-19 {
+  font-size: 19px;
+}
+.text-ser-14 {
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+:root {
+  --AppIcon: url(https://www.apple.com/ac/globalnav/6/th_TH/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg);
+  --ShopIcon: url(https://www.apple.com/ac/globalnav/6/th_TH/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_small.svg);
+  --SearchIcon: url(https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg);
+}
+.nav-link {
+  color: #f5f5f7;
+  font-size: 13px;
+  opacity: 0.8;
+}
+.nav-link:hover {
+  color: #f5f5f7;
+  opacity: 1;
+}
+.nav-link:focus {
+  color: #f5f5f7;
+  opacity: 0.6;
+}
+
+.ap-icon {
+  background-size: 16px 44px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 16px;
+}
+.ap-icon-text {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  top: 50%;
+}
+.ap-home {
+  background-image: var(--AppIcon);
+}
+.ap-shop {
+  background-image: var(--ShopIcon);
+}
+.ap-search {
+  background-image: var(--SearchIcon);
+  background-size: 18px 88px;
+  background-position: 0 -5px;
+  width: 30px;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */

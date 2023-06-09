@@ -1,0 +1,272 @@
+body {
+  background-color: #000;
+  color: #f5f5f7;
+  overflow-x: hidden;
+}
+a,
+a:hover {
+  color: #2997ff;
+}
+
+.color-grey {
+  color: #a1a1a6;
+}
+.bg-black {
+  background-color: #000;
+}
+.container {
+  max-width: var(--breakpoint-lg);
+}
+.pt-6 {
+  padding-top: 6rem !important;
+}
+.pb-6 {
+  padding-bottom: 6rem !important;
+}
+.pt-7 {
+  padding-top: 12rem !important;
+}
+.pb-7 {
+  padding-bottom: 12rem !important;
+}
+.mt-6 {
+  margin-top: 6rem !important;
+}
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+.mt-7 {
+  margin-top: 12rem !important;
+}
+.mb-7 {
+  margin-bottom: 12rem !important;
+}
+
+.text-gradient {
+  display: inline-block;
+  width: fit-content;
+  color: transparent;
+  background-image: linear-gradient(to right, #005e7f, #61b6cd);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.gradient-bg {
+  background-image: linear-gradient(to right, #005e7f, #61b6cd);
+}
+.line-height-08 {
+  line-height: 0.8;
+}
+.gradient-black-top {
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 40%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 40%
+  );
+}
+
+#camera2 {
+  color: #1d1d1f;
+  background-color: var(--light);
+  border: none;
+  outline: 0;
+}
+#camera1,
+#camera3 {
+  color: #a1a1a6;
+  background-color: #1d1d1f;
+  border: none;
+  outline: 0;
+}
+.accessory {
+  background: linear-gradient(to bottom, #000 0, #161617);
+}
+
+/* Computer size */
+.text-xxl {
+  font-size: 80px;
+}
+.text-xl {
+  font-size: 56px;
+}
+.text-lg {
+  font-size: 32px;
+}
+.text-md-5 {
+  font-size: 24px;
+}
+.text-md {
+  font-size: 21px;
+}
+.text-sm {
+  font-size: 17px;
+}
+.test-sss {
+  font-size: 15px;
+}
+.text-25px {
+  font-size: 25px;
+}
+.text-28px {
+  font-size: 28px;
+}
+.text-19px {
+  font-size: 19px;
+}
+.text-79px {
+  font-size: 79px;
+}
+.text-48px {
+  font-size: 48px;
+}
+
+.br-phone {
+  display: none;
+}
+.br-com {
+  display: inline;
+}
+.d-com {
+  display: unset;
+}
+.d-phone {
+  display: none;
+}
+.center-com {
+  text-align: center;
+}
+.right-com {
+  text-align: right;
+}
+.ex-text1 {
+  font-size: 44px;
+}
+
+.img1 {
+  position: relative;
+  background-image: url(iPhone-12-Pro-Pic/css-com-img1.jpg);
+  width: 100%;
+  height: 662px;
+  background-size: 1352px 662px;
+  background-position: 20vw;
+  background-repeat: no-repeat;
+}
+.img2 {
+  width: 100%;
+  height: 990px;
+  background-size: 1008px 990px;
+  background-repeat: no-repeat;
+  background-image: url(iPhone-12-Pro-Pic/css-com-img2.jpg);
+  background-position: top right;
+  position: absolute;
+}
+.img3 {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(iPhone-12-Pro-Pic/css-com-img3.jpg);
+  background-size: cover;
+}
+.chart {
+  background-image: radial-gradient(#619ccdaf, #005d7f09);
+}
+.chart-h {
+  height: 200px;
+}
+.line-h-1 {
+  line-height: 1.1;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+.XDR-box-p {
+  padding: 40px 60px 66px;
+}
+.btn-orange {
+  font-size: 12px;
+  color: #f56300;
+  border-color: #f56300;
+  border-style: solid;
+  border-width: 1px;
+  cursor: text;
+}
+
+/* Telephone size */
+@media screen and (max-width: 767px) {
+  .text-xxl,
+  .text-79px {
+    font-size: 48px;
+  }
+  .text-xl,
+  .text-48px {
+    font-size: 32px;
+  }
+  .text-lg {
+    font-size: 28px;
+  }
+  .text-md-5 {
+    font-size: 21px;
+  }
+  .text-md {
+    font-size: 17px;
+  }
+  .text-sm {
+    font-size: 14px;
+  }
+  .text-28px {
+    font-size: 24px;
+  }
+  .text-19px {
+    font-size: 12px;
+  }
+  .br-phone {
+    display: inline;
+  }
+  .br-com {
+    display: none;
+  }
+  .d-com {
+    display: none;
+  }
+  .d-phone {
+    display: unset;
+  }
+  .center-com {
+    text-align: left;
+  }
+  .right-com {
+    text-align: left;
+  }
+  .center-phone {
+    text-align: center;
+  }
+  .img1 {
+    background-image: url(iPhone-12-Pro-Pic/css-phone-img1.jpg);
+    width: 100%;
+    height: 662px;
+    background-size: 600px;
+    background-position: center;
+  }
+  .img3 {
+    background-image: url(iPhone-12-Pro-Pic/css-phone-img3.jpg);
+  }
+  .ex-text1 {
+    font-size: 32px;
+  }
+  .img4 {
+    height: 643px;
+    background-size: 662px 643px;
+    background-position: top left;
+  }
+  .chart-h {
+    height: 180px;
+  }
+  .XDR-box-p {
+    padding: 16px 28px 40px;
+  }
+}
